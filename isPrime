@@ -1,0 +1,20 @@
+#finding prime number
+''' in first step defining the function called  "is_prime" 
+ and in indention of function taking input from the user using keyword 'input()' &
+  assigning value to the variable n 
+  after that writing logic of whether the number prime or not
+  logic: if the number is divisible by it self it is prime number else it is not a prime number'''
+
+#defining the function 
+def is_prime():    
+  n=int(input())    #taking input from the user
+  if n >1:
+    for i in range(2,n):
+      if n%i==0:
+        print(f'{n} is not a prime number')
+        break
+    else:
+      print(f'{n} is a prime number')
+      
+#calling  function by function name      
+is_prime()
